@@ -1,1 +1,4 @@
-Idag så planerar jag själv upp början så att det är lätt att ändra. 
+Idag så planerar jag själv upp början så att det är lätt att ändra. torsdag v49.
+
+Jag har nu börjat med själva rummen, började med klasserna. inte riktigt säker på om jag gjort rätt.
+vi kommer behöva skapa monster och sedan göra ett combatsystem. 
