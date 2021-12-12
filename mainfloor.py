@@ -68,7 +68,7 @@ def grottöppning():
     förstadörr=förstadörr.lower()
     
     if förstadörr == "vänster":
-        print("du står nu och kikar in i gulddörren, du ser ett tomt rum och en träddörr framför dig..")
+        print("du står nu och kikar in i gulddörren, du ser ett tomt rum och en till gulddörr framför dig..")
         print("du går in och kikar in i nästa rum..")
         guldrum()
     
@@ -82,7 +82,40 @@ def grottöppning():
     
 def guldrum():
     print("du är nu i guldrummet där du ser...")
+    print("rummet är upplyst och du ser en guldkista mitt i rummet..")
+    print("du känner dig säker när du går in..")
+    print("rummet är mycket dammigt och det ser ut som om rummet har varit övergivet väldigt länge..")
+    print("vill du gå fram till guldkistan?")
+        
+
+    guldkista=input(">")
+    guldkista=guldkista.lower()
+
+    if guldkista == "ja":
+        print("du står nu framför guldkistan.") 
+    if guldkista == "nej":
+        print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
+                                        #om du säger nej att gå fram till kistan kommer den fråga om du vill öppna ändå, fixa...
+    print("vill du öppna guldkistan?")
+    öppnakista=input(">")
+    öppnakista=öppnakista.lower()
+
+    if öppnakista == "ja":
+        print("i kistan så ligger det några guldmynt och ett vapen.")
+    if öppnakista == "nej":
+        print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
     
+    print("vill du gå ut ur rummet?")
+
+    gåut=input(">")
+    gåut=gåut.lower()
+
+    if gåut == "ja":
+        grottöppning() #kommer fixa mellanrummet, men för tillfället 
+    if gåut == "nej":
+        print("du står kvar och stirrar på en stängd guldkista..")
+        print("säker på att du inte vill gå ut ur rummet?")
+
 
 start()
 
