@@ -166,7 +166,7 @@ def guldkorridor():
     gåut=gåut.lower()
 
     if gåut == "ja":
-        guldkorridor() #kommer fixa mellanrummet, men för tillfället 
+        guldkorridor()
     if gåut == "nej":
         print("du står kvar och stirrar på en stängd guldkista..")
         print("säker på att du inte vill gå ut ur rummet?")
