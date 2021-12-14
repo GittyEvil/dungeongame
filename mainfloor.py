@@ -57,8 +57,8 @@ def start():
         grottöppning()
 
 def grottöppning():
-    print("du står nu i grottöppningen, det är kvavt och du ser inte så mycket..\n")
-    print("du går lite längre in och ser ljus, när du kollar närmare ser du 3 dörrar..\n")
+    print("du står nu i grottöppningen, det är kvavt och du ser inte så mycket..")
+    print("du går lite längre in och ser ljus, när du kollar närmare ser du 3 dörrar..")
     print("en dörr rakt framför dig, en träddörr, till vänster har ser du en gulddörr och till höger om dig har du en dörr med en dödskalle hängandes över..")
     print("du blir väldigt försiktig med tanke på att det kan bo fler monster här eller något annat mystiskt, men du behöver ta dig ut..")
     print("hur gör du? vilken dörr väljer du?")
@@ -70,23 +70,78 @@ def grottöppning():
     if förstadörr == "vänster":
         print("du står nu och kikar in i gulddörren, du ser ett tomt rum och en till gulddörr framför dig..")
         print("du går in och kikar in i nästa rum..")
-        guldrum()
+        guldkorridor()
     
     if förstadörr == "höger":
-        print("rummet är tomt och du ser en väldigt stor dörr när du kikar in, som en stor port med massa figurer och annat på..")
+        bosskoridor()
+
     
-    if förstadörr == "fram":
+    if förstadörr == "framåt":
         print("när du väl kikar in i rummet så upptäcker du monster..")
         print("du kommer inte kunna fly eftersom att ett monster redan hoppat på dig..")
         print("gör dig redo för strid..")
     
+
+def bosskoridor():
+    print("du har nu gått igenom dörren med en dödskalle över sig..")
+    print("du ser massor av skelett delar överallt från döda personer..")
+    print("du blir genast försiktig och kollar runt för att se om det finns någon fiende i rummet..")
+    print("du ser bara massa bokhyllor med blod på från de döda och en stor port längre in i rummet..")
+    print("du misstänker att bakom den dörren finns något riktigt farligt..")
+    print("vågar du gå igenom den stora porten?")
+
+    bossdörr=input(">")
+    bossdörr=bossdörr.lower()
+
+    if bossdörr == "ja":
+        bossrum()
+    if bossdörr == "nej":
+        print("du står kvar i korridoren, vill du inte göra något annat?")
+
+    gåtillgrottöppning=input(">")
+    gåtillgrottöppning=gåtillgrottöppning.lower()
+    
+    if gåtillgrottöppning == "ja":
+            grottöppning()
+    if gåtillgrottöppning == "nej":
+        bosskoridor()
+
+def bossrum():
+    print("du har nu öppnat den stora tunga porten..")
+    print("du ser dig omkring, det är en stor sal med bord och stolar lite överallt, dammigt och en stor tron längst in i rummet..")
+    print("Du ser inte om någon sitter på tronen eftersom att det är så mörkt längre in. det lyser knappt där du står redan..")
+    print("du ser återigen skelett delar som ligger på stolar och bord.Du märker även att inget av möblerna är trasiga..")
+    print("kan det vara en magiker som gjort detta?")
+
 def guldrum():
-    print("du är nu i guldrummet där du ser...")
+    print("du är nu i guldrummet..")
     print("rummet är upplyst och du ser en guldkista mitt i rummet..")
     print("du känner dig säker när du går in..")
     print("rummet är mycket dammigt och det ser ut som om rummet har varit övergivet väldigt länge..")
     print("vill du gå fram till guldkistan?")
         
+def guldkorridor():
+    print("du står nu i vad som ser ut och vara en guldig korridor..")
+    print("när du ser dig omkring så ser du massa bokhyllor fullt med böcker och rummet är även dammigt..")
+    print("rummet är även någorlunda upplyst..")
+    print("längre in i rummet ser du en till guldig dörr..")
+    print("bakom dig har du dörren du kom ifrån..")
+    print("vill du gå igenom dörren framför dig?")
+
+    gåiniguldrum=input(">")
+    gåiniguldrum=gåiniguldrum.lower()
+
+    if gåiniguldrum =="ja":
+        guldrum()
+    if gåiniguldrum == "nej":
+        print("du står kvar i guldkorridoren, säker på att du inte vil göra något?")
+        print("vill du gå tillbaka till grottöppningen?")
+        gåtillgrottöppning=input(">")
+        gåtillgrottöppning=gåtillgrottöppning.lower()
+        if gåtillgrottöppning == "ja":
+            grottöppning()
+        if gåtillgrottöppning == "nej":
+            print("du står nu kvar i guldkorridoren..")
 
     guldkista=input(">")
     guldkista=guldkista.lower()
@@ -111,7 +166,7 @@ def guldrum():
     gåut=gåut.lower()
 
     if gåut == "ja":
-        grottöppning() #kommer fixa mellanrummet, men för tillfället 
+        guldkorridor() #kommer fixa mellanrummet, men för tillfället 
     if gåut == "nej":
         print("du står kvar och stirrar på en stängd guldkista..")
         print("säker på att du inte vill gå ut ur rummet?")
