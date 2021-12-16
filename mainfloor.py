@@ -9,21 +9,21 @@ class Tank:
         self.health=self.maxph
         self.attack=20
  
-class Mage:
+class Magiker:
     def __init__ (self, name):
         self.name=name
         self.maxhp=150
         self.health=self.maxhp
         self.attack=50
 
-class Warrior:
+class Krigare:
     def __init__(self, name):
         self.name=name
         self.maxhp=200
         self.health=self.maxhp
         self.attack=30
     
-class Hunter:
+class Jägare:
     def __init__(self, name):
         self.name=name
         self.maxhp=100
@@ -34,7 +34,7 @@ def start():
     print("Du slogs mot en stor drake men började förlora..")
     print("Du försöker fly så fort som möjligt och hittar en grotta..")
     print("Du tar dig in i grottan där du är säker men kan inte ta dig ut för där vaktar draken..")
-    print("vilken klass vill du välja.. Det finns 4 klasser att välja på:tank, warrior, mage och hunter.")
+    print("vilken klass vill du välja.. Det finns 4 klasser att välja på:tank, krigare, magiker och jägare.")
     
     character=input(">")
     character=character.lower()
@@ -44,16 +44,16 @@ def start():
         grottöppning()
     
 
-    if character == "warrior":
-        print("du har valt klassen warrior.")
+    if character == "krigar":
+        print("du har valt klassen krigare.")
         grottöppning()
 
-    if character == "mage":
-        print("du har valt klassen mage.")
+    if character == "magiker":
+        print("du har valt klassen magiker.")
         grottöppning()
 
-    if character == "hunter":
-        print("du har valt klassen hunter.")
+    if character == "jägare":
+        print("du har valt klassen jägare.")
         grottöppning()
 
 def grottöppning():
@@ -87,6 +87,8 @@ def bosskoridor():
     print("du ser massor av skelett delar överallt från döda personer..")
     print("du blir genast försiktig och kollar runt för att se om det finns någon fiende i rummet..")
     print("du ser bara massa bokhyllor med blod på från de döda och en stor port längre in i rummet..")
+    print("bakom en död kropp vid en bokhylla så ser det ut att ligga en karta av något slag..")
+    print("när du kollar närmare på den stora svarta porten så ser du tydliga mönster av drakar och andra monster och andra saker som du inte kan identifiera..")
     print("du misstänker att bakom den dörren finns något riktigt farligt..")
     print("vågar du gå igenom den stora porten?")
 
@@ -148,17 +150,17 @@ def guldkorridor():
 
     if guldkista == "ja":
         print("du står nu framför guldkistan.") 
-    if guldkista == "nej":
-        print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
-                                        #om du säger nej att gå fram till kistan kommer den fråga om du vill öppna ändå, fixa...
-    print("vill du öppna guldkistan?")
-    öppnakista=input(">")
-    öppnakista=öppnakista.lower()
+        print("vill du öppna guldkistan?")
+        öppnakista=input(">")
+        öppnakista=öppnakista.lower()
 
-    if öppnakista == "ja":
-        print("i kistan så ligger det några guldmynt och ett vapen.")
-    if öppnakista == "nej":
-        print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
+        if guldkista == "nej":
+            print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
+
+        if öppnakista == "ja":
+            print("i kistan så ligger det några guldmynt och ett vapen.")
+        if öppnakista == "nej":
+            print("du känner att guldkistan kan vara farlig men du känner dig fortfarande säker i rummet..")
     
     print("vill du gå ut ur rummet?")
 

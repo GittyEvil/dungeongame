@@ -1,8 +1,7 @@
-Idag så planerar jag själv upp början så att det är lätt att ändra. torsdag v49.
 
-Jag har nu börjat med själva rummen, började med klasserna. inte riktigt säker på om jag gjort rätt.
 vi kommer behöva skapa monster och sedan göra ett combatsystem. 
 
+jag behöver fixa och göra om vänster sidan för att inputs krockar med varandra//Adrian
 
 man ska kunna hitta en karta som visar hur allt ser ut i dungeonen. där den ligger i ett rum någonstans och man får leta upp.
 
