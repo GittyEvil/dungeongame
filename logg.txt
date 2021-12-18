@@ -1,9 +1,22 @@
 
-vi kommer behöva skapa monster och sedan göra ett combatsystem. 
-
-jag behöver fixa och göra om vänster sidan för att inputs krockar med varandra//Adrian
+vi kommer behöva skapa monster och sedan göra ett combatsystem
 
 man ska kunna hitta en karta som visar hur allt ser ut i dungeonen. där den ligger i ett rum någonstans och man får leta upp.
 
-gör ett inventory där man kan plocka upp
+
+
+vad jag gjort, liten sammanfattning:
+jag har gjort en start med lite backstory, efter den får man välja klass där man då "spawnar" in i grottöppningen(första rummet) 
+där man går längre in i grottan och upptäcker ljus och 3 dörrar, en trädörr rakt fram med en gulddörr till vänster och höger har du dörren med dödskalle över sig.
+du kan gå till vänster där du hamnar i en korridor in till det riktiga guldrummet. rakt fram är monster och till höger hamnar du i en till korridor och en stor port inuti(bossrummet)
+kartan ligger i korridoren innan bossrumemt, vi får fixa så man kan leta upp den, har bara hintat den än så länge. jag har skapat en ryggsäck och importat sleep så inte all text 
+kommer direkt utan lite efter varandra. 
+
+vad vi behöver: 
+andra leveln(du fixar)
+combat system 
+klasser 
+search för att kunna hitta gömda föremål
+kommentera snyggt 
+hp för monster och boss. ingår i combat system kanske
 
