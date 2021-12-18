@@ -32,7 +32,7 @@ class Jägare:
         self.attack=40
 ryggsäck=[]
     
-def start():
+def start(): #backstory
     print("Du slogs mot en stor drake men började förlora..")
     sleep(1)
     print("Du försöker fly så fort som möjligt och hittar en grotta..")
@@ -65,7 +65,7 @@ def start():
         sleep(1)
         grottöppning()
 
-def grottöppning():
+def grottöppning():  #själva starten av spelet
     print("du står nu i grottöppningen, det är kvavt och du ser inte så mycket..")
     sleep(1)
     print("du går lite längre in och ser ljus, när du kollar närmare ser du 3 dörrar..")
@@ -100,7 +100,7 @@ def grottöppning():
         print("gör dig redo för strid..")
     
 
-def bosskoridor():
+def bosskoridor(): #rummet innan bossrum med kartan
     print("du har nu gått igenom dörren med en dödskalle över sig..")
     sleep(1)
     print("du ser massor av skelett delar överallt från döda personer..")
@@ -133,7 +133,7 @@ def bosskoridor():
     if gåtillgrottöppning == "nej":
         bosskoridor()
 
-def bossrum():
+def bossrum():   #bossrummet
     print("du har nu öppnat den stora tunga porten..")
     sleep(1)
     print("du ser dig omkring, det är en stor sal med bord och stolar lite överallt, dammigt och en stor tron längst in i rummet..")
@@ -144,7 +144,7 @@ def bossrum():
     sleep(1)
     print("kan det vara en magiker som gjort detta?")
 
-def guldrum():
+def guldrum(): #själv guldrummet
     print("du är nu i guldrummet..")
     sleep(1)
     print("rummet är upplyst och du ser en guldkista mitt i rummet..")
@@ -155,7 +155,7 @@ def guldrum():
     sleep(1)
     print("vill du gå fram till guldkistan?")
         
-def guldkorridor():
+def guldkorridor(): #rum innan guldrumS
     print("du står nu i vad som ser ut och vara en guldig korridor..")
     sleep(1)
     print("när du ser dig omkring så ser du massa bokhyllor fullt med böcker och rummet är även dammigt..")
