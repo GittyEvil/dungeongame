@@ -6,3 +6,4 @@ jag behöver fixa och göra om vänster sidan för att inputs krockar med varand
 man ska kunna hitta en karta som visar hur allt ser ut i dungeonen. där den ligger i ett rum någonstans och man får leta upp.
 
 gör ett inventory där man kan plocka upp
+
